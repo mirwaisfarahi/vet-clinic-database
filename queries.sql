@@ -150,7 +150,13 @@ GROUP BY vets.name, animals.species_id, species.name
 ORDER BY animals.species_id DESC
 LIMIT 1;
 
--- Check data performance
+
+-- Queries before optimization
+SELECT COUNT(*) FROM visits where animal_id = 4;
+SELECT * FROM visits where vet_id = 2;
+SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+-- Queries after optimization for data performance
 explain analyze SELECT COUNT(animal_id) FROM visits where animal_id = 4;
 
 explain analyze SELECT animal_id, vets_id, date_of_visit FROM visits where vets_id = 2;
