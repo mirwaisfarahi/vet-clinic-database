@@ -160,3 +160,5 @@ SELECT * FROM owners where email = 'owner_18327@mail.com';
 explain analyze SELECT COUNT(animal_id) FROM visits where animal_id = 4;
 
 explain analyze SELECT animal_id, vets_id, date_of_visit FROM visits where vets_id = 2;
+
+explain analyze SELECT full_name, age, email FROM owners where email = 'owner_18327@mail.com'; 
