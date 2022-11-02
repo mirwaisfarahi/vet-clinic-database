@@ -8,6 +8,8 @@
 - Clinic employees
 - Visits
 
+![schema_diagram](https://user-images.githubusercontent.com/104019280/199405522-dad14d77-e1bd-438c-9da8-c703fcde1f84.png)
+
 ## Built With
 
 - Major languages: SQL and PostgreSQL
